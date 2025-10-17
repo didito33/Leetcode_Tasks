@@ -1,7 +1,7 @@
 ﻿using Leetcode_Tasks.Models;
 
 namespace Leetcode_Tasks.Problems;
-public class Solution
+public partial class Solution
 {
     public ListNode AddTwoNumbers(ListNode l1, ListNode l2)//Task 2
     {
