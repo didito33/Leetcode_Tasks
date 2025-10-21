@@ -4,7 +4,7 @@ using System;
 namespace Leetcode_Tasks.Problems;
 public partial class Solution
 {
-    public bool IsMatch(string s, string p)
+/*    public bool IsMatch(string s, string p)
     {
         char[] sArr = s.ToCharArray();
         char[] pArr = p.ToCharArray();
@@ -21,5 +21,5 @@ public partial class Solution
             if (isDot(sArr[i])) pArr[i] = sArr[i];
 
         }
-    }
+    }*/
 }
