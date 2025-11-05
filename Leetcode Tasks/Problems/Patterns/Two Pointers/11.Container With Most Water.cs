@@ -10,7 +10,7 @@ public partial class Solution
         int right = height.Length - 1;
         int maxWater = 0;
 
-        while( left <= right)
+        while(left <= right)
         {
             int currentMinHeight = Math.Min(height[left], height[right]);
             int currentWidth = right - left;

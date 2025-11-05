@@ -3,16 +3,20 @@
 namespace Leetcode_Tasks.Top150;
 public partial class Solution
 {
-    public int MaxProfit(int[] prices)
+    public void Rotate(int[] nums, int k)
     {
-        var maxProfit = 0;
-        for (int i = 0; i < prices.Length; i++)
+        int n = nums.Length;
+        k = k % n;
+        int[] copy = new int[n];
+
+        for (int i = 0; i < n; i++)
         {
-            for (int j = i + 1; j < prices.Length; j++)
-            {
-                maxProfit = Math.Max(maxProfit, prices[j] - prices[i]);
-            }
+            copy[(i + k) % n] = nums[i];
         }
-        return maxProfit;
+
+        for (int i = 0; i < n; i++)
+        {
+            nums[i] = copy[i];
+        }
     }
 }
