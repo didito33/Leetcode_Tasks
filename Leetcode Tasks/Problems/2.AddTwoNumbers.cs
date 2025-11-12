@@ -3,7 +3,7 @@
 namespace Leetcode_Tasks.Problems;
 public partial class Solution
 {
-    public ListNode AddTwoNumbers(ListNode l1, ListNode l2)//Task 2
+    public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
     {
         ListNode dummyHead = new ListNode(0);
         ListNode current = dummyHead;
